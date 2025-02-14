@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¿Quieres ser mi San Valentín?</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>¿Quieres ser mi San Valentín? 💖</h1>
+        <div class="buttons">
+            <button class="btn yes" id="yesButton" onclick="aceptar()">Sí</button>
+            <button class="btn no" onclick="agrandarSi()">No</button>
+        </div>
+    </div>
+
+    <script>
+        let size = 18;
+        function agrandarSi() {
+            size *= 1.2;
+            let yesButton = document.getElementById("yesButton");
+            yesButton.style.fontSize = size + "px";
+            yesButton.style.padding = (size / 2) + "px " + (size) + "px";
+        }
+        function aceptar() {
+            window.location.href = "menu.html";
+        }
+    </script>
+</body>
+</html>

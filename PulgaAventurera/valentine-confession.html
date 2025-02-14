@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=DM+Serif+Display:ital@0;1&family=Dancing+Script:wght@400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="valentine-confession.css">
+    <title>Valentine Confession</title>
+</head>
+<body>
+    
+    <button class="back-button" onclick="goBack()">Regresar ♥️ </button>
+    
+
+    <p class="instruction">Picale al corazon ♥️!</p>
+    <div class="container">
+        <label>
+            <div class="heart">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/Love_Heart_SVG.svg" alt="Heart">
+            </div>
+            <input id="messageState" type="checkbox" style="display:none"/>
+        </label>
+        <div class="message">
+            <h1 style="font-family: Cinzel, serif; font-size: 40px; letter-spacing: 1.2px;">Mi amor,</h1>
+            <p> 
+                <span>
+                    &emsp; Quiero tomarme un momento para escribirte estas palabras desde el fondo de mi corazón. No puedo evitar sentirme agradecido por todo lo que hemos compartido, por todo lo que hemos vivido juntos. Gracias por cada sonrisa que me has regalado y por cada palabra de aliento que me ha hecho seguir adelante.
+                </span>
+                <br><br>
+                <span>
+                    &emsp; Eres una persona increíble, y me siento afortunado de tenerte a mi lado. No sé cómo llegué a merecer a alguien tan especial como tú, pero quiero que sepas que valoro cada instante contigo. Amo la manera en que haces que todo a tu alrededor sea más brillante y lleno de vida. Eres mi inspiración, mi refugio y mi mayor apoyo.
+
+                </span>
+                <br><br>
+                <span>
+                    &emsp; Aprecio cada detalle que tienes conmigo, y cada gesto, por pequeño que sea, hace que mi amor por ti crezca aún más. Gracias por ser quien eres, por enseñarme lo que significa amar de verdad. Te amo profundamente, más de lo que las palabras pueden expresar, y siempre estaré aquí, a tu lado, para lo que venga.
+
+                </span>      
+            </p>
+            <br>
+            <div class="sincere">
+                <p style="font-weight: bold;"> Con muchisimo Amor,</p>
+                <p>Ricardo ♥️</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="jquery.js"></script>
+    <script src="jquery2.1.js"></script>
+    <script defer src="valentine-confession.js"></script>
+    <script>
+        function goBack() {
+            window.location.href = "menu.html"; // Asegúrate de tener un archivo "menu.html"
+        }
+    </script>
+</body>
+</html>
